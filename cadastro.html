@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>    
+    <a href="index.html">Home</a>
+    <section>
+        <h1>Cadastro</h1>
+        <form name="contato" action="#" method="get" onsubmit="">
+
+            <label>Nome:</label> <input type="text" name="nome" aria-label="nome" /> <br>
+            <label>Number:</label> <input type="number" min="0" step="2" max="20" name="idade" aria-label="idade" /><br>
+            <label>Senha:</label><input type="password" name="password" aria-label="senha"/><br>
+            <label>Tipo Sanguíneo</label>
+            <select name="sangue" aria-label="sangue">
+                <option value="">Selecione</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select> <br>
+            <label>Mensagem</label>
+            <textarea rows="2" cols="30" aria-label="mensagem" name="mensagem">:D</textarea>
+            
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>

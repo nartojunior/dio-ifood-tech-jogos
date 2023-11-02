@@ -9,11 +9,24 @@
     <h1>Formulários</h1>
     <a href="index.html">Home</a>
     <section>
-        <form name="contato" action="#" method="get" onsubmit="alert('Formulário enviado');" >
-            Nome: <input type="text" name="nome" aria-label="nome" />
-            Idade: <input type="number" min="0" name="idade" aria-label="idade" />
-            Senha: <input type="password" name="password" aria-label="senha"/>
-            <button type="submit">Enviar</button> 
+        <form name="contato" action="#" method="get" onsubmit="alert('Formulário enviado');">
+            <label>Nome:</label> <input type="text" name="nome" aria-label="nome" /> <br>
+            <label>Number:</label> <input type="number" min="0" step="2" max="20" name="idade" aria-label="idade" /><br>
+            <label>Senha:</label><input type="password" name="password" aria-label="senha"/><br>
+            <label>Range:</label> <input type="range" name="range" aria-label="range" /><br>
+            <label>Color:</label> <input type="color" name="color" aria-label="color" /><br>
+            <label>Email:</label> <input type="email" name="email" aria-label="email" /><br>
+            <label>Url:</label> <input type="url" name="url" aria-label="url" /><br>
+            <label>Date:</label> <input type="date" name="date" aria-label="date" /><br>
+            <label>Datetime:</label> <input type="datetime" name="datetime" aria-label="datetime" /><br>
+            <label>Datetime-local:</label> <input type="datetime-local" name="datetime-local" aria-label="datetime-local" /><br>
+            <label>Time:</label> <input type="time" name="time" aria-label="time" /><br>
+            <label>Week:</label> <input type="week" name="week" aria-label="week" /><br>
+            <label>Month:</label> <input type="month" name="month" aria-label="date" /><br>
+            <label>File:</label> <input type="file" name="file" aria-label="file" /><br>
+            <label>Tel:</label><input type="tel" name="tel" aria-label="tel" /><br>
+            <label>Search</label><input type="search" name="search" aria-label="search" /><br>
+            <button type="submit">Enviar</button>
         </form>
     </section>
 </body>
