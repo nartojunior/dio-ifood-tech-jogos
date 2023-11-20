@@ -1,0 +1,137 @@
+* {
+    font-weight: bold;    
+}
+
+h1{
+    background-color: greenyellow;    
+}
+
+p, .myUList {
+    color: red;
+    background-color: aqua;
+}
+
+#oneP{
+    color: green;
+    background-color:coral;
+}
+
+.myUList li{
+    color: fuchsia;
+}
+
+.texto-MAI{
+    text-transform: uppercase;
+}
+
+[title] {
+    color: brown;
+}
+
+/*Busca por palavra exata | [title="palavra"] */
+[title="netflix"]{
+    color:red;
+}
+
+/*Busca por palavra entre espaços | [title~="radical"] */
+/**/
+[title~="max"]{
+    color:cadetblue;
+}
+
+/*Busca por prefixo | [title^="prefixo"] */
+/**/
+[href^="http://"]{
+    background-color:lightgreen;
+}
+
+/*Busca por sufixo | [title$="sufixo"] */
+/**/
+[href$=".com"]{
+    font-size: larger;
+    font-family: 'Lucida Sans';
+}
+
+/*Busca por radical | [title*="radical"] */
+/**/
+[href*="/w"]{
+    text-decoration: none;
+}
+
+/* COMBINADORES */
+/*
+  1. Descendente (espaço)
+  2. Filho (>) - qualquer elemento aninhado
+  3. Irmão Adjacente (+) primeiro elemento após seletor (tag fechada)
+  4. Irmão Geral (~) qualquer elemente após o seletor (tag fechada)
+*/
+
+li {
+    color: red;
+}
+
+li li {
+    color: green;
+}
+
+#lista-01 li {
+    background-color: aqua;
+}
+
+.fundo-verde li {
+    background-color: lightgreen;
+}
+
+.fundo-verde #sublista-01 li {
+    color: black;
+}
+
+div p{
+    background-color: lightcyan;
+}
+
+div > p{
+    color:peru;
+}
+
+.fundo-verde + p {
+    color: black;
+}
+
+.fundo-verde ~ p {
+    background-color: purple;
+}
+
+#botao {
+    width: 300px;
+    min-width: 50px;
+    height: 100px;
+    max-height: 150px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+#elemento-01{
+    background-color: orange;
+    margin-bottom: 50px;
+}
+
+#elemento-02{
+    background-color: purple;
+    box-sizing: border-box;
+}
+
+#elemento-03{
+    background-color: aquamarine;
+    width: 400px;
+}
+
+
+
+
+
