@@ -33,7 +33,7 @@ p, .myUList {
     color:red;
 }
 
-/*Busca por palavra entre espaços | [title~="radical"] */
+/*Busca por palavra entre espaços | [title~="separado por espaço"] */
 /**/
 [title~="max"]{
     color:cadetblue;
@@ -131,6 +131,32 @@ div {
     width: 400px;
 }
 
+.exemplo {
+
+    width: 200px;
+    height: 200px;
+
+    background-color: palevioletred;
+    background-image: linear-gradient(lightpink, red, purple)
+}
+
+.exemplo2 {
+
+    width: 200px;
+    height: 200px;
+
+    background-color: palevioletred;
+    background-image: radial-gradient(lightpink, red, purple)
+}
+
+.exemplo3 {
+
+    width: 200px;
+    height: 200px;
+
+    background-color: palevioletred;
+    background-image: repeating-linear-gradient(to top, lightpink 0px 20px, red 20px 40px)
+}
 
 
 
