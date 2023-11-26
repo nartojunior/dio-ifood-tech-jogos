@@ -1,6 +1,4 @@
-* {
-    font-weight: bold;    
-}
+@import url(./reset.css);
 
 h1{
     background-color: greenyellow;    

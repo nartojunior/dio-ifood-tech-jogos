@@ -1,0 +1,41 @@
+div {
+
+    width: 200px;
+    height: 200px;
+    border: 10px solid #8f382e;
+    margin: 20px auto;
+    background: #fa8072;
+
+    box-shadow: inset 30px 30px 10px -7px blue, 
+                30px 30px 10px -7px blue;
+}
+
+#dio {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+
+    box-shadow: inset 30px 30px 10px -7px green, 
+                30px 30px 10px -7px green;
+}
+
+/* Adiciona a sombra na transparencência das imagens */
+/* através da propriedade 'filter: drop-shadow(X Y blur color) */
+#filter-shadow {
+    margin-top: 30px;
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+
+    filter: drop-shadow(10px 10px 5px grey);
+}
+
+/* Aceitam valores negativos nos 'pixels' */
+h2{
+    color: deeppink;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 2px 2px 1px grey;
+    box-shadow: 2px 2px 1px blue;
+    filter: drop-shadow(10px 10px 5px purple);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .exemplo{
+            background-color: orange;
+            border: 3px solid purple;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        #hidden{
+            overflow: hidden;
+        }
+
+        #scroll{
+            overflow: scroll;
+        }
+
+        #auto{
+            overflow: auto;
+        }
+        #exemplo-1{
+            white-space: nowrap;
+            overflow-y: hidden;
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Propriedade <code>overflow</code></h2>
+    <div class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi magnam quod eos est asperiores dolorem minus architecto similique unde quasi, excepturi accusantium quisquam corrupti deserunt nostrum harum rerum dignissimos?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex modi incidunt harum vero tempore nam? Aperiam iusto sunt soluta vitae earum quibusdam totam quidem aspernatur corrupti? Alias, exercitationem ratione?</p>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <code>overflow: hidden</code>
+    <div id="hidden"class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi magnam quod eos est asperiores dolorem minus architecto similique unde quasi, excepturi accusantium quisquam corrupti deserunt nostrum harum rerum dignissimos?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex modi incidunt harum vero tempore nam? Aperiam iusto sunt soluta vitae earum quibusdam totam quidem aspernatur corrupti? Alias, exercitationem ratione?</p>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <code>overflow: scroll</code>
+    <div id="scroll" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi magnam quod eos est asperiores dolorem minus architecto similique unde quasi, excepturi accusantium quisquam corrupti deserunt nostrum harum rerum dignissimos?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex modi incidunt harum vero tempore nam? Aperiam iusto sunt soluta vitae earum quibusdam totam quidem aspernatur corrupti? Alias, exercitationem ratione?</p>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <code>overflow: auto</code>
+    <div id="auto" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi magnam quod eos est asperiores dolorem minus architecto similique unde quasi, excepturi accusantium quisquam corrupti deserunt nostrum harum rerum dignissimos?</p>
+        
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <code>overflow: auto</code>
+    <div id="auto" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi magnam quod eos est asperiores dolorem minus architecto similique unde quasi, excepturi accusantium quisquam corrupti deserunt nostrum harum rerum dignissimos?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquam harum expedita, vel molestiae dolor pariatur consequatur. Nulla deleniti quidem omnis, non nostrum iure amet deserunt, totam optio ab provident.</p>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <code>overflow-x e overflow-y</code>
+    <div id="exemplo-1" class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi magnam quod eos est asperiores dolorem minus architecto similique unde quasi, excepturi accusantium quisquam corrupti deserunt nostrum harum rerum dignissimos?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint omnis consectetur quod culpa beatae corrupti eum officiis numquam est incidunt libero, optio minima natus at error, repudiandae sequi excepturi?</p>   
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+</html>
