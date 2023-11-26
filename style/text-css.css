@@ -1,0 +1,26 @@
+.elemento{
+
+    width: 200px;
+    background-color: aqua;
+
+}
+
+p{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#ex01{
+    text-overflow: clip;
+}
+
+#ex02{
+    /*-ms-text-overflow: ellipsis;*/
+    text-overflow: ellipsis;
+}
+
+#ex03{
+    /*-ms-text-overflow: '----';*/
+    /*-o-text-overflow: '----';*/
+    text-overflow: '----';
+}
