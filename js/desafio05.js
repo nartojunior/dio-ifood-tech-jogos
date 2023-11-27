@@ -52,4 +52,5 @@ function calcMaquinhinha(preco, forma){
         console.log("Valor com juros de 10% R$: " + (preco * 1.1 ).toFixed(2) )
     }
 }) (preco_produto, forma_pag_outro);
-// Como a função anônima tem paramtros, os argumentos podem ser passados no momento da invocação da mesma.
+// Como a função anônima tem parametros, os argumentos podem ser passados no momento da invocação da mesma.
+// Para ter retorno, as funções deve usar a keyword 'return' seguida do valor a ser retornado.
