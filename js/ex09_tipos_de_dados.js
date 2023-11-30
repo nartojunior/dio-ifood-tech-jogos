@@ -81,6 +81,11 @@ console.log(typeof NaN)
 console.log(123e5)  // 12300000
 console.log(123e-5) // 0.00123
 console.log(12_1_23) // underscore notation
+console.log(0xFF) // hexadecimal notation
+
+// Hexadecimal é base 16. Decimal é base 10. Octal é base 8. Binário é base 2.
+let nbases = 32
+console.log(`${ nbases.toString(16) } | ${ nbases.toString(10) } | ${ nbases.toString(8) } | ${ nbases.toString(2) }` )
 
 console.log("Symbols")
 
@@ -134,7 +139,23 @@ const pessoa = {
 
 const novoMetodo = pessoa.falar
 
+console.log(" --- Metodos ---- ")
+
 pessoa.falar()
-novoMetodo() // não da erro por ser de uma declaração direta de objeto.
+novoMetodo() // não da erro por ser de uma declaração direta de objeto em variável.
+
+// Para conseguir utilizar o 'this' é preciso usar o recurso de prototype com objeto nomeado
+Oba.prototype.falar2 = function() { console.log(`${ this.nome }`) }
+
+const metodo3 = oOba.falar2
+metodo3() // não vai dar erro, pois agora está adicionado no protótipo
+
+metodo3.nome = "oba"
+metodo3() // Não da erro, mas não define this.nome
+
+pessoa.falar2 = function() { console.log(`${ this.nome }`) }
+
+const metodo4 = pessoa.falar2
+metodo4() // não vai dar erro, pois agora está adicionado no protótipo
 
 
